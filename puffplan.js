@@ -392,10 +392,10 @@ order1.addEventListener("click", (event) => {
 
 // Функция для вычисления общей цены
 function calculateTotalPrice(price1, price2) {
-    const price1Numeric = parseInt(price1.replace("₽", "").replace(",", ""));
-    const price2Numeric = parseInt(price2.replace("₽", "").replace(",", ""));
+    const price1Numeric = parseInt(price1.replace("$", "").replace(",", ""));
+    const price2Numeric = parseInt(price2.replace("$", "").replace(",", ""));
     const total = price1Numeric + price2Numeric;
-    return total + "₽";
+    return total + "$";
 }
 
 async function sendMessageToBot(instructionMessage) {
